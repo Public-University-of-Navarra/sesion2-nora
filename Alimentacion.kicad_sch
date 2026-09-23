@@ -5,4 +5,15 @@
 	(uuid "af68df61-7be4-481d-9abd-e72a63f48d0e")
 	(paper "A4")
 	(lib_symbols)
+	(hierarchical_label "Vout3v"
+		(shape output)
+		(at 177.8 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9a95d102-ab15-4617-8020-99e29dbbef4e")
+	)
 )

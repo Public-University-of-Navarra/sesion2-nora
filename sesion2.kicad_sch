@@ -2,9 +2,151 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid d1e9e723-5327-48d1-b5e7-0bbac6992fdf)
+	(uuid "d1e9e723-5327-48d1-b5e7-0bbac6992fdf")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 130.81 53.34) (xy 130.81 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b05e1be-c28a-4f07-aa50-e4fefcddc91f")
+	)
+	(wire
+		(pts
+			(xy 121.92 53.34) (xy 130.81 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2cf102-9b78-4548-8bbe-283fce394ceb")
+	)
+	(wire
+		(pts
+			(xy 130.81 129.54) (xy 123.19 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5d62678-07e7-4c6b-8b4c-05709b5a9465")
+	)
+	(sheet
+		(at 43.18 35.56)
+		(size 78.74 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c1caa85c-9bda-46ac-bb58-ca6470d629ed")
+		(property "Sheetname" "Alimentacion"
+			(at 43.18 34.8484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Alimentacion.kicad_sch"
+			(at 43.18 98.3746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vout3v" output
+			(at 121.92 53.34 0)
+			(uuid "9a0e0c98-8b36-47b3-8050-e8fbf468aad4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "sesion2"
+				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 118.11)
+		(size 80.01 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e7909b8b-0298-42a0-a680-fce37ec3f573")
+		(property "Sheetname" "Microcontrolador"
+			(at 43.18 117.3984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Microcontrolador.kicad_sch"
+			(at 43.18 184.7346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "vdd_mcu" input
+			(at 123.19 129.54 0)
+			(uuid "daceed68-0862-4c45-b180-6939f67e64c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "sesion2"
+				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
