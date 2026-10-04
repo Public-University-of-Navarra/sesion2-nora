@@ -1594,6 +1594,12 @@
 		(color 0 0 0 0)
 		(uuid "97712510-e369-44c7-8b2d-dd2c1c0c3b11")
 	)
+	(junction
+		(at 140.97 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaa21faa-1e37-47f0-8ab4-9eb6855ce011")
+	)
 	(no_connect
 		(at 115.57 118.11)
 		(uuid "0a698a8b-b370-4155-8f47-20e44fe1ab32")
@@ -1836,6 +1842,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 76.2) (xy 158.75 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f3f2348-67fa-4ef2-9cbc-9ef9ebda297c")
+	)
+	(wire
+		(pts
 			(xy 106.68 76.2) (xy 106.68 80.01)
 		)
 		(stroke
@@ -1853,6 +1869,16 @@
 			(type default)
 		)
 		(uuid "52d6096c-1bfc-42d9-a038-f40ff6ed7ba0")
+	)
+	(wire
+		(pts
+			(xy 140.97 76.2) (xy 140.97 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54449acd-c203-4c58-85f3-241f2fad6ecd")
 	)
 	(wire
 		(pts
@@ -1926,7 +1952,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 40.64) (xy 140.97 95.25)
+			(xy 140.97 40.64) (xy 140.97 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1963,6 +1989,16 @@
 			(type default)
 		)
 		(uuid "95dc26eb-0fd0-4eb9-bc17-4c0d381202e1")
+	)
+	(wire
+		(pts
+			(xy 158.75 76.2) (xy 140.97 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a1f5b59-40e8-4c05-ac5e-2d1f699104aa")
 	)
 	(wire
 		(pts
@@ -2077,7 +2113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09184710-cf44-4873-954a-c68b898827a6")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR09"
 			(at 91.44 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2137,7 +2173,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "#PWR04")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2155,7 +2191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "397feebd-81ab-4e22-9188-54575c7d22c5")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 81.28 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2175,7 +2211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 81.28 97.028 90)
 			(hide yes)
 			(show_name no)
@@ -2217,7 +2253,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2495,7 +2531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44346311-3693-43c8-9b9f-c2c1424be543")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR08"
 			(at 83.82 127 0)
 			(hide yes)
 			(show_name no)
@@ -2555,7 +2591,85 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "#PWR05")
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "733e84b6-c16f-42fe-833e-7db57751020d")
+		(property "Reference" "#PWR012"
+			(at 158.75 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Samacsys:HDRV6W64P0X254_1X6_1524X254X839P"
+			(at 158.75 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6038547e-cc8a-4cca-b2b3-1923d794771d")
+		)
+		(instances
+			(project "sesion2"
+				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -2573,7 +2687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76bcb356-6cbf-4857-9a3b-a1e687f7ad37")
-		(property "Reference" "C3"
+		(property "Reference" "C6"
 			(at 110.49 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2595,7 +2709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Samacsys:HDRV6W64P0X254_1X6_1524X254X839P"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 107.6452 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2637,7 +2751,89 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "C3")
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b09cf89-4a3d-4cc5-addb-651df8b7e6e9")
+		(property "Reference" "C7"
+			(at 162.56 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 162.56 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 159.7152 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fbe6d6b9-716e-4f7a-9114-cc2718e2a063")
+		)
+		(pin "1"
+			(uuid "661098c5-671e-4717-a7a7-03ec88efdd40")
+		)
+		(instances
+			(project "sesion2"
+				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -2655,7 +2851,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98fc50f9-675b-43ce-9378-c33d6b0e54f8")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR07"
 			(at 66.04 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -2716,7 +2912,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "#PWR02")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2733,7 +2929,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a043fb43-2ab5-41fa-95c5-8486b3c5df34")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 110.998 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2872,7 +3068,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -2890,7 +3086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a373a488-1911-42c7-b5e1-58c9bf07f340")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR010"
 			(at 106.68 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -2950,7 +3146,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "#PWR03")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -2968,7 +3164,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c69ccc2d-6191-4f58-963d-33531a2d7aa9")
-		(property "Reference" "C2"
+		(property "Reference" "C4"
 			(at 87.63 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2990,7 +3186,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Samacsys:HDRV6W64P0X254_1X6_1524X254X839P"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 84.7852 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3032,7 +3228,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "C2")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3070,7 +3266,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 96.52 77.978 90)
 			(hide yes)
 			(show_name no)
@@ -3130,7 +3326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce4ed32e-0531-4217-8e4c-638ee475abad")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 73.66 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3150,7 +3346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 73.66 110.998 90)
 			(hide yes)
 			(show_name no)
@@ -3192,7 +3388,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3210,7 +3406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0e5f96f-3fd4-411f-bad3-9b31b4fef544")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR011"
 			(at 135.89 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -3270,7 +3466,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "#PWR01")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3288,7 +3484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f30072db-2159-4ad5-ad3a-fa9349cd379d")
-		(property "Reference" "C1"
+		(property "Reference" "C5"
 			(at 95.25 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3310,7 +3506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Samacsys:HDRV6W64P0X254_1X6_1524X254X839P"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 92.4052 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3352,7 +3548,7 @@
 		(instances
 			(project "sesion2"
 				(path "/d1e9e723-5327-48d1-b5e7-0bbac6992fdf/e7909b8b-0298-42a0-a680-fce37ec3f573"
-					(reference "C1")
+					(reference "C5")
 					(unit 1)
 				)
 			)
