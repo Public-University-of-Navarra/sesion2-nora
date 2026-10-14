@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.138,
+        0.172
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +240,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -513,10 +528,32 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.2,
+        "name": "BUS_50",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.172,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.3,
+        "diff_pair_width": 0.2,
+        "name": "DIFF_90",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": ""
+      },
+      {
         "clearance": 0.3,
         "name": "POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "tuning_profile": "",
@@ -532,15 +569,27 @@
     "netclass_patterns": [
       {
         "netclass": "POWER",
-        "pattern": "Vout3v"
+        "pattern": "GND"
+      },
+      {
+        "netclass": "BUS_50",
+        "pattern": "*SPI*"
       },
       {
         "netclass": "POWER",
-        "pattern": "+ 9v"
+        "pattern": "*3.3v*"
       },
       {
-        "netclass": "POWER",
-        "pattern": "Gnd"
+        "netclass": "BUS_50",
+        "pattern": "*I2C*"
+      },
+      {
+        "netclass": "BUS_50",
+        "pattern": "*DQ*"
+      },
+      {
+        "netclass": "DIFF_90",
+        "pattern": "*USB*"
       }
     ]
   },
@@ -727,7 +776,7 @@
         "uuid": "d1e9e723-5327-48d1-b5e7-0bbac6992fdf"
       }
     ],
-    "used_designators": "PS1,#FLG1-2,IC1,J1-3,R1-3,C1-7,#PWR1-12",
+    "used_designators": "PS1,Cin1-2,J1-6,IC1-7,R1-14,#FLG1-3,C1-19,#PWR1-26,HM1-2,L1,D1,Cboot1,CCOMP1-2,Cout1-2,RCOMP1,REN1-2,RFB1-2,RRT1,U1",
     "variants": []
   },
   "sheets": [
@@ -742,6 +791,10 @@
     [
       "e7909b8b-0298-42a0-a680-fce37ec3f573",
       "Microcontrolador"
+    ],
+    [
+      "6bd153be-8306-40de-92cc-d171957fdd4d",
+      "Sensores"
     ]
   ],
   "text_variables": {},
