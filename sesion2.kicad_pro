@@ -61,10 +61,10 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.5,
-          "min_island_area": 10.0,
+          "min_island_area": 0.0013161349,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -590,6 +590,10 @@
       {
         "netclass": "DIFF_90",
         "pattern": "*USB*"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "*D2*"
       }
     ]
   },
@@ -776,7 +780,7 @@
         "uuid": "d1e9e723-5327-48d1-b5e7-0bbac6992fdf"
       }
     ],
-    "used_designators": "PS1,Cin1-2,J1-6,IC1-7,R1-14,#FLG1-3,C1-19,#PWR1-26,HM1-2,L1,D1,Cboot1,CCOMP1-2,Cout1-2,RCOMP1,REN1-2,RFB1-2,RRT1,U1",
+    "used_designators": "PS1,Cin1-2,J1-6,IC1-7,R1-14,#FLG1-3,C1-19,#PWR1-26,HM1-2,L1,D1-4,Cboot1,CCOMP1-2,Cout1-2,RCOMP1,REN1-2,RFB1-2,RRT1,U1,U3,TP1",
     "variants": []
   },
   "sheets": [
